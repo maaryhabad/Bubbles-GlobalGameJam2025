@@ -30,6 +30,7 @@ public class MainScene : MonoBehaviour
 
     void Update()
     {
+        SimulateBlow();
         // Lógica para o microfone (som real)
         if (microphoneInput != null && Microphone.IsRecording(null))
         {
@@ -37,9 +38,9 @@ public class MainScene : MonoBehaviour
             if (volume > sensitivity)
             {
                 GenerateBubbles(volume);
-
-                character.GetComponent<Animator>().Play("blowing");
-
+                character.GetComponent<Character>().StartBlowing();
+            } else {
+                character.GetComponent<Character>().StopBlowing();
             }
         }
         // Lógica para testes no Editor (simulação de sopro)
@@ -93,11 +94,14 @@ public class MainScene : MonoBehaviour
 
     void SimulateBlow()
     {
-        // Simula sopro no Editor quando o botão do mouse ou espaço é pressionado
-        if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
+        // Simula sopro no Editor quando o espaço é pressionado
+        if (Input.GetKey(KeyCode.Space))
         {
-            Debug.Log("Simulando sopro no Editor...");
             GenerateBubbles(Random.Range(50, 200)); // Simula um volume aleatório
+            character.GetComponent<Character>().StartBlowing();
+        }
+        else if (Input.GetKeyUp(KeyCode.Space)) {
+            character.GetComponent<Character>().StopBlowing();
         }
     }
 }
