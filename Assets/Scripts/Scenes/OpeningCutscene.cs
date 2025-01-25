@@ -1,21 +1,18 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class OpeningCutscene : MonoBehaviour
 {
-    public GameObject background;
+    public Camera firstCamera;
+    public Camera secondCamera;
 
-    public void Start() {
-        Debug.Log("Iniciou o opening cutscene");
-        // Mudar o background para a imagem "QuartoDetetive"
-        background.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("QuartoDetetive");
-
+    void OnEnable() {
+        secondCamera.enabled = true;
+        firstCamera.enabled = false;
     }
-
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            SceneManager.LoadScene("Telephone");
-        }
-    }
+    // public void StartCutscene()
+    // {
+    //     mainCamera.enabled = false;
+    //     secondCamera.enabled = true;
+    //     Debug.Log("Cutscene started.");
+    // }
 }

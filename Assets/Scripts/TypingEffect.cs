@@ -10,6 +10,8 @@ public class TypingEffect : MonoBehaviour
     private string fullText;
     private string currentText = "";
 
+    public GameObject openingCutscene;
+
     private AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,17 +46,7 @@ public class TypingEffect : MonoBehaviour
 
     private void StartOpeningCutscene()
     {
-        OpeningCutscene openingCutscene = gameObject.AddComponent<OpeningCutscene>();
-        if (openingCutscene != null)
-        {
-            openingCutscene.background = GameObject.Find("Background");
-            openingCutscene.enabled = true;
-            openingCutscene.Start(); 
-        }
-        else
-        {
-            Debug.LogError("OpeningCutscene not found.");
-        }
+        openingCutscene.SetActive(true);
     }
 
     private IEnumerator FadeOut()
