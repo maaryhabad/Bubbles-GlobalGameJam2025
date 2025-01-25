@@ -86,7 +86,7 @@ public class Bubble : MonoBehaviour
         float maxBubbleSize = 0.5f;
 
         // Cria a variável spawnPosition
-        Vector2 spawnPosition = new Vector2(character.transform.position.x, character.transform.position.y);
+        Vector2 spawnPosition = new Vector3(character.transform.position.x, character.transform.position.y, 0);
 
         // Instancia o prefab da bolha
         GameObject newBubble = Instantiate(bubble, spawnPosition, Quaternion.identity);

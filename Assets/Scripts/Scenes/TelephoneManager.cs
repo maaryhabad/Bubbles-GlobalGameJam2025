@@ -20,6 +20,15 @@ public class TelephoneManager : MonoBehaviour
         }
         else
         {
+            //diminuir a velocidade do som
+            phoneSound.pitch = 0.5f;
+
+            //quando em dispositivo mobile, fazer o device vibrar
+            if (Application.isMobilePlatform)
+            {
+                Handheld.Vibrate();
+            }
+
             phoneSound.Play();
         }
 
