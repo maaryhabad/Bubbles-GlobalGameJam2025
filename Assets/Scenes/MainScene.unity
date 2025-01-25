@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragAfterTime: 1
   dragAmount: 2
+  bubble: {fileID: 59226501}
+  character: {fileID: 618674429}
 --- !u!212 &59226503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -639,30 +641,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 769404279}
-  - component: {fileID: 769404278}
+  - component: {fileID: 769404280}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MicrophoneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &769404278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769404277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2db58f02696c4ba8adc5e48b90468c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 59226501}
-  character: {fileID: 618674429}
-  sensitivity: 100
-  spawnRadius: 5
 --- !u!4 &769404279
 Transform:
   m_ObjectHideFlags: 0
@@ -678,6 +664,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769404280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769404277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2db58f02696c4ba8adc5e48b90468c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 59226501}
+  character: {fileID: 618674429}
+  sensitivity: 100
+  spawnRadius: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
