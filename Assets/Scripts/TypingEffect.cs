@@ -46,6 +46,7 @@ public class TypingEffect : MonoBehaviour
 
     private void StartOpeningCutscene()
     {
+        Debug.Log("StartOpeningCutscene");
         openingCutscene.SetActive(true);
     }
 

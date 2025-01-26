@@ -417,10 +417,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a1526edf3f5440c8ecbbf8a552ec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phoneSound: {fileID: 546867550}
+  source: {fileID: 546867550}
   slider: {fileID: 2042870485}
   callerName: {fileID: 1471615251}
   timer: {fileID: 2078614979}
+  dialogs:
+  - {fileID: 8300000, guid: f02a069cec4de413480d06fb7464d309, type: 3}
+  - {fileID: 8300000, guid: 0e4a968d698154801ae7a56286edd612, type: 3}
+  - {fileID: 8300000, guid: 498b6c0e884fd4a74b7580e53d106053, type: 3}
 --- !u!4 &643879717
 Transform:
   m_ObjectHideFlags: 0
