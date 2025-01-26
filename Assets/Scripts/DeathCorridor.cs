@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathCorridor : MonoBehaviour
 {
@@ -39,5 +40,6 @@ public class DeathCorridor : MonoBehaviour
 
         yield return new WaitForSeconds(audioClips[1].length);
         audioSource.Stop();
+        SceneManager.LoadScene("Flashback");
     }
 }
