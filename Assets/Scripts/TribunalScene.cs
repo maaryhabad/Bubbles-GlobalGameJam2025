@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using UnityEngine.SceneManagement;
 
 public class TribunalScene : MonoBehaviour
 {
@@ -43,5 +44,6 @@ public class TribunalScene : MonoBehaviour
         audioSource.Play();
         yield return new WaitForSeconds(audioClips[2].length);
         audioSource.Stop();
+        SceneManager.LoadScene("DeathCorridor");
     }
 }

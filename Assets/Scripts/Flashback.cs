@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Flashback : MonoBehaviour
 {
@@ -30,7 +31,10 @@ public class Flashback : MonoBehaviour
             audiosource.Play();
             yield return new WaitForSeconds(audio.length);
             audiosource.Stop();
+            yield return new WaitForSeconds(1f);
         }
         Debug.Log("All audio clips have been played");
+
+        SceneManager.LoadScene("Murder");
     }
 }
