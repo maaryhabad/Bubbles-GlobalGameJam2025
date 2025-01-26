@@ -4,6 +4,11 @@ public class NewspaperDrag : MonoBehaviour
 {
     private Vector3 lastMousePosition;
 
+    void Start()
+    {
+        
+    }
+
     void OnMouseDown()
     {
         lastMousePosition = Input.mousePosition;
@@ -16,6 +21,7 @@ public class NewspaperDrag : MonoBehaviour
         transform.Translate(direction * Time.deltaTime * 100);
 
         lastMousePosition = Input.mousePosition;
+        
     }
 
     void Update()
