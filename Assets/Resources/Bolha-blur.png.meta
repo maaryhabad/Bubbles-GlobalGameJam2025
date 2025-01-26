@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bolha-blur_0: -3533274884186148169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

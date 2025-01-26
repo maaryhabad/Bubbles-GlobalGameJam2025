@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fefd9eda3dd7e478ca92879153efd0fc
+guid: 871e75e934bd243ff8eafc00c8e0ea83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3894415531740123212
-    second: Phone_0
+      213: -878661711488748069
+    second: BolhaGrav1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phone_0
+      name: BolhaGrav1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 412
-        height: 917
+        y: 5
+        width: 283
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c405229ea4ebb0630800000000000000
-      internalID: 3894415531740123212
+      spriteID: bd5f9f824dd5ec3f0800000000000000
+      internalID: -878661711488748069
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Phone_0: 3894415531740123212
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

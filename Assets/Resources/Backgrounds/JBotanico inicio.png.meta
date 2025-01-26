@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JBotanico inicio_0: -7610831144285835777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

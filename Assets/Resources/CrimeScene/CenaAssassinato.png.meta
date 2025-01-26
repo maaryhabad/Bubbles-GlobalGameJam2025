@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CenaAssassinato_0: 3536815280195785641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

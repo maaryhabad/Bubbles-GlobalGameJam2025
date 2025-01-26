@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MurderScene : MonoBehaviour
@@ -42,6 +43,7 @@ public class MurderScene : MonoBehaviour
         audioSource.Play();
         yield return new WaitForSeconds(1f);
         audioSource.Stop();
+        SceneManager.LoadScene("Execution");
     }
     // Update is called once per frame
     void Update()

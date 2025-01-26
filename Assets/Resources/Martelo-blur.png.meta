@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Martelo-blur_0: 8070984887438691093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
