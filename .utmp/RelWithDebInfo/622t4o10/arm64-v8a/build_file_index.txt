@@ -1,0 +1,3 @@
+/Users/marianabeiluneabad/Desktop/Estudos/Global Game Jam 2025/Bubbles-GlobalGameJam2025/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/marianabeiluneabad/Desktop/Estudos/Global Game Jam 2025/Bubbles-GlobalGameJam2025/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/CMakeLists.txt
+/Users/marianabeiluneabad/Desktop/Estudos/Global Game Jam 2025/Bubbles-GlobalGameJam2025/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
